@@ -1,0 +1,45 @@
+
+nav .header{
+    width:100%;
+    max-height:60px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 29, 29);
+   
+}
+.mob {
+    display: none;
+    color:white;
+    list-style:none;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    list-style:none;
+}
+.menu li a:hover{
+    color: white;
+}
+.menu li a{
+    text-decoration: none;
+    padding-right: 30px;
+    color: rgb(202, 197, 197);
+    font-size:14px;
+    
+}
+
+@media screen and (max-width:600px) {
+    .menu li a{
+      display: none;
+        
+    }
+    .mob{
+        display: block;
+        color:white;
+        text-decoration: none;
+        
+    }
+
+}

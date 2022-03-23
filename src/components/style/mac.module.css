@@ -1,0 +1,49 @@
+
+.text {
+    font-size: 42px;
+    color:gray;
+}
+
+.text span{
+    font-weight: 700;
+    color:black;
+}
+
+li{
+    list-style: none;
+}
+
+.text1 {
+    font-size: 14px;
+}
+
+/* h3{
+    font-size: 30px;
+    color: rgb(112, 111, 111);
+    font-weight: 600;
+}
+h3 span{
+    font-weight: 600;
+    color:black;
+} */
+
+
+.textcard {
+    font-size: 14px;
+    color:gray;
+}
+
+.buttoncard a{
+    display: flex;
+    background-color:#0071e3;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    text-decoration:none;
+}
+

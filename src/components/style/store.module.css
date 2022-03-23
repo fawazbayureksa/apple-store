@@ -1,0 +1,38 @@
+/* .container{
+    margin-top: 20px;
+    padding: 0 0 0 215px;
+} */
+
+.section1{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: space-between; 
+}
+.text {
+    font-size: 42px;
+    margin-right: 80px;
+    color:gray;
+}
+
+.text span{
+    font-weight: 700;
+    color:black;
+}
+
+.text1 {
+    /* line-height: 100%; */
+    font-size:14px;
+}
+
+.section2{
+    margin-top:60px ;
+    display: flex;
+}
+.section2 img{
+    width: 115px;
+    height: 85px;
+    padding-right: 30px;
+}
+.section2 p{
+    padding-right: 30px;
+}

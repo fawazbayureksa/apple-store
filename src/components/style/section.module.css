@@ -1,0 +1,288 @@
+
+.baris {
+    display:flex;
+}
+.gambartext 
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gambartext p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.text {
+    font-size: 30px;
+    color:gray;
+}
+.text p{
+   font-weight: 600;
+}
+.text span{
+    font-weight: 700;
+    color:black;
+}
+
+.card {
+    height: auto;
+    position: relative;
+    border:1px rgb(255, 255, 255) solid ;
+    border-radius:15px;
+    padding:20px 20px 0 20px;
+    line-height:30px;
+    margin:0px 20px 20px 0;
+    background: white;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0,0,.1);
+}
+.carddark {
+    height: auto;
+    position: relative;
+    border:1px rgb(255, 255, 255) solid ;
+    border-radius:15px;
+    padding:20px 20px 0 20px;
+    line-height:30px;
+    margin:0 20px 20px 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 2px 4px 2px rgba(0, 0,0,.1);
+    color: white;
+}
+.cardsmall {
+    height: 230px;
+    position: relative;
+    border-radius:15px;
+    padding:20px 20px 0 20px;
+    line-height:30px;
+    margin:20px 20px 0 0;
+    background-image:url('../../assets/asset-17.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0,0,.1);
+
+}
+.cardsmall p{
+    width: 50%;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight:600 ;
+}
+.card img{
+    margin: 0;
+    padding: 0;
+}
+.card span{
+    font-size:22px;
+    font-weight:700;
+}
+
+.card_body span{
+    font-size: 28px;
+    font-weight:700;
+}
+
+.card p{
+    width: 60%;
+    font-size:18px;
+}
+
+.carddark span{
+    font-size:20px;
+    font-weight:700;
+}
+.carddark p{
+    font-size:16px;
+}
+
+.row {
+    display:flex;
+    margin-top:20px;
+    width: 100vh;
+}
+
+.card_sec4 {
+    position:relative;
+    height: 200px;
+    border-radius:15px;
+    padding:20px 20px 20px 20px;
+    line-height:30px;
+    margin:20px 20px 0 0;
+    background-color: white;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0,0,.1);
+    text-align: left;
+
+}
+.card_sec4 p{
+    margin-top: 15px;
+    font-size:20px;
+    font-weight: 600;
+}
+.biru {
+    color:#007aff;
+}
+.pink {
+    color:#ff0053;
+}
+.ungu {
+    color:#ac39ff;
+}
+.hijau {
+    color:#39cc71;
+}
+
+.icon_biru {
+    font-size: 35px;
+    color:#007aff;
+}
+
+
+.icon_pink {
+    font-size: 35px;
+    color:#ff0053;
+    
+}
+.icon_ungu {
+    font-size: 35px;
+    color:#ac39ff;
+}
+.icon_hijau {
+    font-size: 35px;
+    color:#39cc71;
+}
+
+
+.card_sec5 {
+    height: 450px;
+    width: 600px;
+    border-radius:15px;
+    padding:20px 0px 20px 20px;
+    line-height:30px;
+    margin:20px 20px 0 0;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0,0,.1);
+    background-image:url('../../assets/asset-18.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.card_sec5 .text {
+    margin-top:40px ;
+}
+.card_sec5 p {
+    padding-bottom: 310px;
+    width: 80%;
+    font-size: 18px;
+    color: rgb(117, 112, 112);
+}
+.card_sec5 span{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.card_prod {
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border:1px rgb(255, 255, 255) solid ;
+    border-radius:15px;
+    padding:20px 20px 0 20px;
+    line-height:30px;
+    margin:0px 20px 0 0;
+    background: white;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0,0,.1);
+}
+.card_prod img{
+    align-self:center;
+    margin-top: 40px;
+    height: 250px;
+    width: 250px;
+
+}
+
+.card_prod small {
+    color: #ff0053;
+    
+}
+
+.card_prod p {
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.card_prod span{
+    position: absolute;
+    bottom: 0;
+    color: rgb(87, 86, 86);
+}
+.card .text6 {
+    margin-top: 30px;
+    width:90%;
+}
+
+.card .text6 span{
+    font-size: 30px;
+}
+.card .text6 p{
+    font-size: 16px;
+    width: 60%;
+    color: rgb(119, 116, 116);
+}
+.card .text7 {
+    margin-top: 20px;
+    width:100%;
+}
+
+.card .text7 span{
+    font-size: 26px;
+}
+
+
+.card_sec7 {
+    height: auto;
+    position: relative;
+    border:1px rgb(255, 255, 255) solid ;
+    border-radius:15px;
+    padding:20px 20px 0 20px;
+    line-height:30px;
+    margin:0px 20px 0 0;
+    background-color:rgb(246,246,248) ;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0,0,.1);
+
+
+}
+.card_sec7 .text7 {
+    width:60%;
+    margin-bottom: 20px;
+}
+
+.card_sec7 .text7 span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.card_sec7 .text7 p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: rgb(119, 116, 116);
+}
+.card .text7 p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: rgb(119, 116, 116);
+}
+.carddark .text7 p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: rgb(223, 223, 223);
+}
+.carddark .text7 span{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+
