@@ -19,6 +19,7 @@ const Router = () => {
           <Routes>
             <Route path="/store" element={<Store />} />
             <Route path="/shop-mac" element={<Mac />} />
+            <Route path="/checkout-mac" element={<Checkout />} />
             <Route path="/shop-watch" element={<Watch />} />
             <Route path="/shop-iphone" element={<Iphone />} />
             <Route path="/shop-ipad" element={<Ipad />} />

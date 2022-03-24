@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 import {FaRegComments,FaRegBookmark,FaBox,FaShoppingBag,FaApple} from "react-icons/fa";
 import Macbookair from "../../assets/mac/macbook-air.jpg";
 import Macbook from "../../assets/mac/mac-compare.jpg";
@@ -97,7 +98,7 @@ class Buymac extends Component {
                         <p className="text-primary mt-3">
                             Get Started  
                         </p>   
-                        <button className="btn btn-primary w-100 rounded">Select</button>   
+                        <Link to="/checkout-mac" className="btn btn-primary w-100 rounded">Select</Link>   
 
                         <div className="d-flex flex-row mt-5">
                             <div>
@@ -230,7 +231,7 @@ class Buymac extends Component {
                             Compare Mac models
                         </h2>
                         <p className='text-primary'>
-                            Find the best Mac for you >
+                            Find the best Mac for you &gt;
                         </p>
 
                         <img src={Macbook} className="w-auto"/>
@@ -247,7 +248,7 @@ class Buymac extends Component {
                                 Every Mac comes with a  one-year limited warranty (opens in a new window) and up to 90 days of complimentary technical support(opens in a new window). AppleCare+ for Mac extends your coverage from your AppleCare+ purchase date and adds up to two incidents of accidental damage protection every 12 months, each subject to a service fee of $99 for screen damage or external enclosure damage, or $299 for other accidental damage, plus applicable tax. In addition, youll get 24/7 priority access to Apple experts via chat or phone. For complete details, see the terms
                             </p>
                             <p className="text-center text-primary">
-                                Learn more about AppleCare+ >
+                                Learn more about AppleCare+ &gt;
                             </p>
                         </div>
                     </div>
@@ -260,7 +261,7 @@ class Buymac extends Component {
                         </h2>
                         <p>Create a business account to start qualifying for special pricing.</p>
                         <p className='text-primary'>
-                            Sing up now >
+                            Sing up now &gt;
                         </p>
 
                 </Models2>
@@ -272,8 +273,8 @@ class Buymac extends Component {
                             <h2 className='fw-bold overflow-hidden text-white'> <FaApple className="fs-3"/>tv+</h2>
                             <p className='w-75 text-white'>Get 3 months of Apple TV+ free when you buy a Mac</p>
                             <div className='d-flex'>
-                                <p className='text-primary me-3'>Try it free ></p>
-                                <p className='text-primary'>Learn more ></p>
+                                <p className='text-primary me-3'>Try it free &gt;</p>
+                                <p className='text-primary'>Learn more &gt;</p>
                             </div>
                         </div>                        
                             <img src={Appletv} className="w-auto"/>
