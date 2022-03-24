@@ -15,13 +15,15 @@
 }
 
 .text span{
-    font-weight: 700;
+
     color:black;
+    font-weight: 700;
 }
 
 .text1 {
     /* line-height: 100%; */
     font-size:14px;
+  
 }
 
 .section2{
