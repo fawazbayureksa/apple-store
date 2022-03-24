@@ -41,7 +41,7 @@ class Section1 extends Component {
                             <Text className="align-self-center mt-3">iPad</Text>
                         </div>
                         <div  className="d-flex flex-column">
-                        <a ><Link to="/watch"><img src={watchs} className="w-100"/></Link></a>
+                        <a ><Link to="/shop-watch"><img src={watchs} className="w-100"/></Link></a>
                             <Text className="align-self-center mt-3">Apple Watch</Text>
                         </div>
                         <div  className="d-flex flex-column">

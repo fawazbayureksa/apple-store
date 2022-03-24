@@ -3,9 +3,10 @@ import Styles from "../style/mac.module.css";
 import Carousel from 'react-elastic-carousel';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-import Asset1 from "../../assets/mac/asset-1.jpeg";
-import Asset2 from "../../assets/mac/asset-5.jpeg";
-import Asset3 from "../../assets/mac/asset-8.jpeg";
+import Asset1 from "../../assets/watch/asset-1.jpeg";
+import Asset2 from "../../assets/watch/asset-8.jpeg";
+import Asset3 from "../../assets/watch/asset-12.jpeg";
+import Asset4 from "../../assets/watch/asset-13.jpeg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -26,17 +27,15 @@ const breakPoints2 = [
     // {width:1450 , itemsToShow:5,itemsToScroll:2, pagination:true },
     // {width:1750 , itemsToShow:6},
 ];
-
-
 class Shopwatch extends Component {
     render (){
         return (
             <div>
                 <div className='container'>
-                    <div className='row justify-content-center mt-5 ms-5 ps-5'>
-                        <div className='col-md-7'>
+                <div className='row justify-content-start mt-5 ms-5 ps-5'>
+                        <div className='col-md-9 text-left'>
                             <div className={Styles.text}>
-                                <span>Shop Mac</span>
+                                <span>Shop Apple Watch</span>
                             </div>
                         </div>
                         <div className='col-md-3'>
@@ -72,36 +71,48 @@ class Shopwatch extends Component {
                         <div className='card rounded shadow-xl me-3'>
                             <div className='card-body'>
                                 <Topcard> 
-                                    MacBook Air
+                                    Apple Watch Series 7
                                 </Topcard>
                                 <img src={Asset1} className="card-img-bottom" />
                                 <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $999 or $83.25/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-watch">Buy</Link></div>
+                                    <span className={Styles.textcard}>From $399or $16.62/mo. per monthfor 24 mo.*</span>
+                                    <div className={Styles.buttoncard}><Link to="/Shop-watch">Shop</Link></div>
                                 </div>
                             </div>
                         </div>
                         <div className='card rounded shadow-xl me-3'>
                             <div className='card-body'>
                                 <Topcard> 
-                                    MacBook Air
+                                    Apple Watch SE
                                 </Topcard>
                                 <img src={Asset2} className="card-img-bottom" />
                                 <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $999 or $83.25/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-watch">Buy</Link></div>
+                                    <span className={Styles.textcard}>From $279or $11.62/mo. per monthfor 24 mo*</span>
+                                    <div className={Styles.buttoncard}><Link to="/Shop-watch">Shop</Link></div>
                                 </div>
                             </div>
                         </div>                   
                         <div className='card rounded shadow-xl me-3'>
                             <div className='card-body'>
                                 <Topcard> 
-                                    MacBook Air
+                                    Apple Watch Series 3
                                 </Topcard>
                                 <img src={Asset3} className="card-img-bottom" />
                                 <div className='d-flex'>
+                                    <span className={Styles.textcard}>From $199or $8.29/mo.per month for 24 mo*</span>
+                                    <div className={Styles.buttoncard}><Link to="/Shop-watch">Shop</Link></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='card rounded shadow-xl me-3'>
+                            <div className='card-body'>
+                                <Topcard> 
+                                    Apple Watch Nike
+                                </Topcard>
+                                <img src={Asset4} className="card-img-bottom" />
+                                <div className='d-flex'>
                                     <span className={Styles.textcard}>From $999 or $83.25/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-watch">Buy</Link></div>
+                                    <div className={Styles.buttoncard}><Link to="/Shop-watch">Shop</Link></div>
                                 </div>
                             </div>
                         </div>
