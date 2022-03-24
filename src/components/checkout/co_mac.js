@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaRegComments,FaRegBookmark,FaBox,FaShoppingBag,FaApple} from "react-icons/fa";
 import Macbookair from "../../assets/mac/macbook-air.jpg";
-import Macbook from "../../assets/mac/mac-compare.jpg";
-import Hero from "../../assets/mac/hero.jpg";
+import Macbook from "../../assets/mac/asset-15.jpg";
+import Kabel from "../../assets/mac/asset-16.jpg";
+import Cas from "../../assets/mac/asset-17.jpg";
 import Appletv from "../../assets/mac/apple-tv.jpg";
 
 class Comac extends Component {
@@ -26,6 +27,27 @@ class Comac extends Component {
                 <div className='d-flex justify-content-center mt-5'>
                     <div className='col-md-4'>
                         <img src={Macbookair} className="w-100 p-2"/>
+                        <p className='text-center text-primary'>Viw Gallery</p>
+                        <div className='row justify-content-center'>
+                            <div className='col-md-5 fs-4 text-center'>
+                                <FaBox />
+                                <P>Get free delivery, or pick up available items at an Apple Store</P>
+                            </div>
+                            <div className='col-md-3 fs-4 text-center'>
+                                <FaBox />
+                                <P>Free and easy returns</P>
+                            </div>
+                        </div>
+                        <hr></hr>
+                        <div className='d-flex justify-content-center'>
+                            <div>
+                                <FaRegComments className='fs-4 me-3'/>
+                            </div>
+                            <div>
+                                <P>Have questions about buying a Mac?</P>
+                                <P className='text-primary'>Chat with a Mac Specialist</P>
+                            </div>
+                        </div>
                     </div>
                     <div className='col-md-5 ms-3'>
                         <Scroll>
@@ -78,7 +100,7 @@ class Comac extends Component {
                                         <option value="3">Backlit Magic Keyboard - US Chinese</option>
                                     </select>
                                 </div>
-                                <h3 className='fs-4 fw-bolder'>Pre-Installed Software</h3>
+                                <h3 className='fs-4 fw-bolder overflow-hidden'>Pre-Installed Software</h3>
                                 <p className='fw-bold mt-4'>Final Cut Pro</p>
                                 <p className='text-primary'>Learn more</p>
 
@@ -93,7 +115,7 @@ class Comac extends Component {
                                 <p className='fw-bold mt-4'>Logic Pro</p>
                                 <p className='text-primary'>Learn more</p>
 
-                                <div className='d-flex mt-3'>
+                                <div className='d-flex mt-3 mb-5'>
                                     <Boxs className='border-primary border-3'>
                                         <p className='fs-6 fw-bold'>None</p>
                                     </Boxs>
@@ -101,12 +123,45 @@ class Comac extends Component {
                                         <p className='fs-6 fw-bold'>Logic Pro</p>                                       
                                     </Boxs>
                                 </div>
-
+                                <Box className='bg-light border-light flex-row'>
+                                    <div>
+                                        <p className='fw-bold'>Still deciding?</p>
+                                        <p>Add this item to a list and easily come back to it later.</p>
+                                    </div>
+                                    <div className='text-primary mt-2 fs-4'>
+                                        <FaRegBookmark />
+                                    </div>
+                                </Box>
+                                
                         </Scroll>
+                        
+                    </div>
+
+                </div>
+                <hr className='w-auto'></hr>
+
+                    <div className='text-center mt-5'>
+                        <h1 className='fw-bolder overflow-hidden'>What’s in the Box</h1>
+                    </div>
+                    <div className='bg-light d-flex justify-content-center'>
+                            <img src={Macbook} className="w-50"/>
+                            <img src={Kabel}/>
+                            <img src={Cas}/>
+                    </div>
+
+                    <div className='row justify-content-center mt-5'>
+                    <div className='d-flex w-75 bg-dark'>
+                        <div className="flex-column mt-5 ms-5">
+                            <h2 className='fw-bold overflow-hidden text-white'> <FaApple className="fs-3"/>tv+</h2>
+                            <p className='w-75 text-white'>Get 3 months of Apple TV+ free when you buy a Mac</p>
+                            <div className='d-flex'>
+                                <p className='text-primary me-3'>Try it free &gt;</p>
+                                <p className='text-primary'>Learn more &gt;</p>
+                            </div>
+                        </div>                        
+                            <img src={Appletv} className="w-auto"/>
                     </div>
                 </div>
-
-
             </div>
         )
     }
@@ -131,7 +186,7 @@ const Navlink = styled.div`
 `
 const Scroll = styled.div`
     overflow-y:scroll;
-    height:400px;
+    height:600px;
     p{
         font-size:14px;
     }
@@ -145,13 +200,13 @@ const Box = styled.div`
     border-radius:10px;
     display:flex;
     flex-direction:column;
-  
+
     justify-content:center;
 
     p{
         align-self:start;
         margin-left:30px
-   
+      
     
 ` 
 
@@ -166,5 +221,9 @@ const Boxs = styled.div`
 
     p{
         align-self:center;   
+        
     
 ` 
+const P = styled.div`
+        font-size:12px;
+`
