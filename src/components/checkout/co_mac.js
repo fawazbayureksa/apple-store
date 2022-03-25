@@ -149,7 +149,7 @@ class Comac extends Component {
                             <img src={Cas}/>
                     </div>
 
-                    <div className='row justify-content-center mt-5'>
+                    <div className='row justify-content-center mt-5cpde '>
                     <div className='d-flex w-75 bg-dark'>
                         <div className="flex-column mt-5 ms-5">
                             <h2 className='fw-bold overflow-hidden text-white'> <FaApple className="fs-3"/>tv+</h2>
