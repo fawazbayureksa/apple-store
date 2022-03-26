@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Style from '../../components/style/checkout.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {FaRegComments,FaRegBookmark,FaBox,FaShoppingBag,FaApple} from "react-icons/fa";
 import Macbookair from "../../assets/mac/macbook-air.jpg";
@@ -50,7 +51,8 @@ class Comac extends Component {
                         </div>
                     </div>
                     <div className='col-md-5 ms-3'>
-                        <Scroll>
+                       
+                        <Scroll className={Style.scroll}> 
                                 <p className='fs-2 fw-bolder '>
                                     Customize your MacBook Air &#45; Space Gray
                                 </p>
@@ -123,7 +125,7 @@ class Comac extends Component {
                                         <p className='fs-6 fw-bold'>Logic Pro</p>                                       
                                     </Boxs>
                                 </div>
-                                <Box className='bg-light border-light flex-row'>
+                                <Box className='d-flex bg-light border-light flex-row'>
                                     <div>
                                         <p className='fw-bold'>Still deciding?</p>
                                         <p>Add this item to a list and easily come back to it later.</p>
@@ -132,24 +134,19 @@ class Comac extends Component {
                                         <FaRegBookmark />
                                     </div>
                                 </Box>
-                                
                         </Scroll>
-                        
                     </div>
-
                 </div>
                 <hr className='w-auto'></hr>
-
                     <div className='text-center mt-5'>
-                        <h1 className='fw-bolder overflow-hidden'>What’s in the Box</h1>
+                        <h1 className='fw-bolder overflow-hidden'>Whats in the Box</h1>
                     </div>
                     <div className='bg-light d-flex justify-content-center'>
                             <img src={Macbook} className="w-50"/>
                             <img src={Kabel}/>
                             <img src={Cas}/>
                     </div>
-
-                    <div className='row justify-content-center mt-5cpde '>
+                    <div className='row justify-content-center mt-5 '>
                     <div className='d-flex w-75 bg-dark'>
                         <div className="flex-column mt-5 ms-5">
                             <h2 className='fw-bold overflow-hidden text-white'> <FaApple className="fs-3"/>tv+</h2>

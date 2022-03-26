@@ -5,44 +5,55 @@ import {FaApple , FaSistrix , FaShoppingBag} from "react-icons/fa";
 class Navbar extends Component {
     render(){
         return (
-           <nav>
-                <div className={Styles.header}>
-                    <ul className={Styles.mob}>
-                        <li>
-                            <Link to="/">
-                                <FaApple className="fs-4"/>
-                            </Link>
-                        </li>
-                    </ul>
-                    <ul className={Styles.menu}>
-                        <li>
-                            <Link to="/">
-                                <FaApple className="fs-5"/>
-                            </Link>
-                        </li>
-                        <li><Link to="/store">Store</Link></li>
-                        <li><Link to="/shop-mac">Mac</Link></li>
-                        <li><Link to="#">iPad</Link></li>
-                        <li><Link to="#">iPhone</Link></li>
-                        <li><Link to="#">Watch</Link></li>
-                        <li><Link to="#">AirPods</Link></li>
-                        <li><Link to="#">TV Home</Link></li>
-                        <li><Link to="#">Only on Apple</Link></li>
-                        <li><Link to="#">Accesories</Link></li>
-                        <li><Link to="#">Support</Link></li>
-                        <li>
-                            <Link to="/">
-                                    <FaSistrix className="fs-6"/>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/">
-                                    <FaShoppingBag className="fs-6"/>
-                            </Link>
-                        </li>
-                    </ul>
+            <div className="navi">
+                <ul class="nav justify-content-center bg-dark nav-pills flex-column flex-sm-row">
+                    <FaApple className="mob"/>
+                    <li class="nav-item">
+                        <Link to="/" class="nav-link text-white ">
+                            <FaApple className="fs-5" />
+                        </Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/store" class="flex-sm-fill text-sm-center nav-link text-white">Store</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-mac" class="text-sm-center nav-link text-white">Mac</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-ipad" class="nav-link text-white">iPad</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-mac" class="nav-link text-white">iPhone</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-mac" class="nav-link text-white">Watch</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-mac" class="nav-link text-white">AirPods</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-mac" class="nav-link text-white">TV Home</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-mac" class="nav-link text-white">Only on Apple</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/shop-mac" class="nav-link text-white">Accesories</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/" class="nav-link text-white">
+                            <FaSistrix className="fs-6" />
+                        </Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/" class="nav-link text-white">
+                            <FaShoppingBag className="fs-6" />
+                        </Link>
+                    </li>
+                </ul>
                 </div>
-            </nav>
+             
+            
         )
     }
 }

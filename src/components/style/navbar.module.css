@@ -26,20 +26,17 @@ nav .header{
     text-decoration: none;
     padding-right: 30px;
     color: rgb(202, 197, 197);
-    font-size:14px;
-    
+    font-size:14px;   
 }
 
 @media screen and (max-width:600px) {
     .menu li a{
       display: none;
-        
     }
     .mob{
         display: block;
         color:white;
         text-decoration: none;
-        
     }
 
 }
