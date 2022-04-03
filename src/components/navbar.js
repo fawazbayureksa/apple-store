@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Styles from "./style/navbar.module.css";
 import {FaApple , FaSistrix , FaShoppingBag} from "react-icons/fa";
 class Navbar extends Component {
     render(){
@@ -40,6 +39,7 @@ class Navbar extends Component {
                     <li class="nav-item">
                         <Link to="/shop-mac" class="nav-link text-white">Accesories</Link>
                     </li>
+               
                     <li class="nav-item">
                         <Link to="/" class="nav-link text-white">
                             <FaSistrix className="fs-6" />
@@ -51,8 +51,7 @@ class Navbar extends Component {
                         </Link>
                     </li>
                 </ul>
-                </div>
-             
+            </div>
             
         )
     }

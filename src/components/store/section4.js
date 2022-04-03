@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Section from "../components/style/section.module.css";
+import Section from "../style/section.module.css";
 import Carousel from 'react-elastic-carousel';
 import {FaShoppingBag, FaBox,FaRegGrinAlt,FaLaptop,FaRegCreditCard} from "react-icons/fa";
 

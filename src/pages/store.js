@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Styles from "../components/style/store.module.css";
 import styled from "styled-components";
-import Section1 from "../components/section1";
-import Section2 from "../components/section2";
-import Section3 from "../components/section3";
-import Section4 from "../components/section4";
-import Section5 from "../components/section5";
-import Section6 from "../components/section6";
-import Section7 from "../components/section7";
-import Section8 from "../components/section8";
+import Section1 from "../components/store/section1";
+import Section2 from "../components/store/section2";
+import Section3 from "../components/store/section3";
+import Section4 from "../components/store/section4";
+import Section5 from "../components/store/section5";
+import Section6 from "../components/store/section6";
+import Section7 from "../components/store/section7";
+import Section8 from "../components/store/section8";
 
 class Store extends Component {
   render() {

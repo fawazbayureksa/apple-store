@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel'; 
-import Section from "./style/section.module.css";
-import Mac from "../assets/asset-74.jpeg";
-import Mac2 from "../assets/asset-76.jpeg";
-import Mac3 from "../assets/asset-77.jpg";
-import Ipad from "../assets/asset-75.jpeg";
+import Section from "../style/section.module.css";
+import Mac from "../../assets/asset-74.jpeg";
+import Mac2 from "../../assets/asset-76.jpeg";
+import Mac3 from "../../assets/asset-77.jpg";
+import Ipad from "../../assets/asset-75.jpeg";
 
 
 const breakPoints = [

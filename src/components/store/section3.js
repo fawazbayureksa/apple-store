@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Section from "../components/style/section.module.css";
+import Section from "../style/section.module.css";
 import styled from "styled-components";
-import User from "../assets/asset-15.jpeg";
-import App from "../assets/asset-16.jpeg";
-import Bar from "../assets/asset-17.jpeg";
+import User from "../../assets/asset-15.jpeg";
+import App from "../../assets/asset-16.jpeg";
+import Bar from "../../assets/asset-17.jpeg";
 class Section3 extends Component {
     render (){
         return (

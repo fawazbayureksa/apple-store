@@ -1,11 +1,11 @@
 import React , {Component} from 'react';
 import styled from "styled-components";
 import Carousel from 'react-elastic-carousel';
-import Section from "./style/section.module.css";
-import Asset18 from "../assets/asset-18.jpeg";
-import Iphone from "../assets/asset-19.jpeg";
-import Silicone1 from "../assets/asset-26.jpeg";
-import Silicone2 from "../assets/asset-31.jpeg";
+import Section from "../style/section.module.css";
+import Asset18 from "../../assets/asset-18.jpeg";
+import Iphone from "../../assets/asset-19.jpeg";
+import Silicone1 from "../../assets/asset-26.jpeg";
+import Silicone2 from "../../assets/asset-31.jpeg";
 
 const breakPoints = [
     {width:1,itemsToShow:1},

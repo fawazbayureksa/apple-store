@@ -14,7 +14,6 @@ class Comac extends Component {
         return (
             <div >   
                 <Nav className="d-flex align-items-center overflow-hidden">
-                    
                         <Navtext className="fs-5 fw-bold me-auto">
                             MacBook Air
                         </Navtext>
@@ -146,7 +145,7 @@ class Comac extends Component {
                             <img src={Kabel}/>
                             <img src={Cas}/>
                     </div>
-                    <div className='row justify-content-center mt-5 '>
+                <div className='row justify-content-center mt-5 '>
                     <div className='d-flex w-75 bg-dark'>
                         <div className="flex-column mt-5 ms-5">
                             <h2 className='fw-bold overflow-hidden text-white'> <FaApple className="fs-3"/>tv+</h2>
@@ -159,6 +158,31 @@ class Comac extends Component {
                             <img src={Appletv} className="w-auto"/>
                     </div>
                 </div>
+
+                <Footer className="p-0 overflow-hidden border-top-0">` `
+                    <div className='d-flex container justify-content-center px-5'>
+                        <div className='col-md-4 col-lg-3'>
+                            <FaBox/>
+                                <p className="fw-bold"> 
+                                Ships: </p>
+                                <p>free shipping</p>
+                                <small className='text-primary'>Get delivery dates</small>
+                        </div>
+                            <div className='col-md-4 col-lg-3'>
+                                    <FaShoppingBag/>
+                                    <p className='fw-bold'>Pick up:</p>
+                                    <small className='text-primary'>Check Availability</small>
+                            </div>
+                            <div className='col-md-4 col-lg-3'>
+                                <div>
+                                        <button className='btn btn-primary'>Add to Cart
+                                         <FaShoppingBag className='ms-2'/>
+                                        </button>
+                                </div>
+                            </div>
+                    </div>
+                </Footer>
+
             </div>
         )
     }
@@ -202,9 +226,7 @@ const Box = styled.div`
 
     p{
         align-self:start;
-        margin-left:30px
-      
-    
+        margin-left:30px      
 ` 
 
 const Boxs = styled.div`
@@ -223,4 +245,16 @@ const Boxs = styled.div`
 ` 
 const P = styled.div`
         font-size:12px;
+`
+
+const Footer = styled.div`
+        width:100%;
+        height:140px;
+        background: #d9e7f5;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        p{
+            font-size:14px;
+        }
 `

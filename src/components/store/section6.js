@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Carousel from 'react-elastic-carousel';
-import Section from "./style/section.module.css";
-import Speaker from "../assets/asset-53.jpeg";
-import Airpods from "../assets/asset-54.jpeg";
-import Twe from "../assets/asset-55.jpeg";
+import Section from "../style/section.module.css";
+import Speaker from "../../assets/asset-53.jpeg";
+import Airpods from "../../assets/asset-54.jpeg";
+import Twe from "../../assets/asset-55.jpeg";
 
 const breakPoints = [
     {width:1,itemsToShow:1},

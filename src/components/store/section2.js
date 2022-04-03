@@ -1,21 +1,19 @@
 import React , {Component} from 'react';
 import styled from 'styled-components';
 import Carousel from "react-elastic-carousel";
-import Section from "./style/section.module.css";
-import Iphone from "../assets/iphone-13s.jpg";
-import Ipad from "../assets/ipad.jpg";
-import Macstudio from "../assets/mac-studio.jpg";
-import Studio from "../assets/studio.jpg";
-import Card13 from "../assets/card-iphone-13.jpg";
-import Cardse from "../assets/card-iphone-se.jpg";
+import Section from "../style/section.module.css";
+import Iphone from "../../assets/iphone-13s.jpg";
+import Ipad from "../../assets/ipad.jpg";
+import Macstudio from "../../assets/mac-studio.jpg";
+import Studio from "../../assets/studio.jpg";
+import Card13 from "../../assets/card-iphone-13.jpg";
+import Cardse from "../../assets/card-iphone-se.jpg";
 
 const breakPoints = [
     {width:1,itemsToShow:1},
     {width:550 , itemsToShow:1 },
     {width:768, itemsToShow:2 , outerSpacing:150},
     {width:1200 , itemsToShow:3, outerSpacing:150}
-    // {width:1450 , itemsToShow:5,itemsToScroll:2, pagination:true },
-    // {width:1750 , itemsToShow:6},
 ];
 
 
@@ -95,7 +93,6 @@ class Section2 extends Component {
                             </div>
                         </div>
                     {/* </div> */}
-                 
                     </Carousel>
                 </div>
             </div>

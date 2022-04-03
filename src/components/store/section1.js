@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
-import mac from "../assets/mac.png";
-import iphone from "../assets/iphone.png";
-import ipad from "../assets/ipad.png";
-import watchs from "../assets/watch.png";
-import airpods from "../assets/airpods.png";
-import airtags from "../assets/airtags.png";
-import appletv from "../assets/appletv.png";
-import homepod from "../assets/homepod.png";
-import accesories from "../assets/accessories.png";
-import giftcards from "../assets/giftcards.png";
+import mac from "../../assets/mac.png";
+import iphone from "../../assets/iphone.png";
+import ipad from "../../assets/ipad.png";
+import watchs from "../../assets/watch.png";
+import airpods from "../../assets/airpods.png";
+import airtags from "../../assets/airtags.png";
+import appletv from "../../assets/appletv.png";
+import homepod from "../../assets/homepod.png";
+import accesories from "../../assets/accessories.png";
+import giftcards from "../../assets/giftcards.png";
 
 
 const breakPoints = [
