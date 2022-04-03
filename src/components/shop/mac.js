@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import Styles from "../style/mac.module.css";
 import Carousel from 'react-elastic-carousel';
-import { Link } from "react-router-dom";
-import styled from 'styled-components';
-import Asset1 from "../../assets/mac/asset-1.jpeg";
-import Asset2 from "../../assets/mac/asset-5.jpeg";
-import Asset3 from "../../assets/mac/asset-8.jpeg";
+import Styles from "../style/mac.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import data from "../data";
+import Card from '../Card';
 
 
 const breakPoints = [
@@ -28,10 +24,14 @@ const breakPoints2 = [
 ];
 
 
-class Shopmac extends Component {
-    render (){
+// console.log(data.product)
+
+
+const Shopmac = () => {
+  
         return (
             <div>
+             
                 <div className='container'>
                     <div className='row justify-content-center mt-5 ms-5 ps-5'>
                         <div className='col-md-7'>
@@ -69,53 +69,21 @@ class Shopmac extends Component {
 
                 <div className='row'>
                     <Carousel breakPoints={breakPoints}>
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                    MacBook Air
-                                </Topcard>
-                                <img src={Asset1} className="card-img-bottom" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $999 or $83.25/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-mac">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                    MacBook Air
-                                </Topcard>
-                                <img src={Asset2} className="card-img-bottom" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $999 or $83.25/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-mac">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>                   
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                    MacBook Air
-                                </Topcard>
-                                <img src={Asset3} className="card-img-bottom" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $999 or $83.25/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-mac">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
+                        {data.product.map((item,index) => {
+                            return( 
+                                <Card 
+                                item={item} 
+                                title={item.title} 
+                                image={item.image} 
+                                price={item.price}    
+                                key={index}    
+                                />
+                             )
+                        })}
                      </Carousel> 
                 </div>
             </div>
         )
     }
-}
-export default Shopmac;
 
-const Topcard = styled.div`
-    
-    margin-top:20px;
-    font-size: 30px;
-    font-weight: 700;
-`
+export default Shopmac;

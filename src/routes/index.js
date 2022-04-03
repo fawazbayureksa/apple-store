@@ -10,11 +10,12 @@ import Checkout from "../pages/checkout";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Buymac from "../components/buy/buymac";
-
+import {CartProvider} from "react-use-cart";
 const Router = () => {
   return (
     <div className={Main}>
-      <Navbar />
+      <CartProvider>
+        <Navbar />
         <div className={Main.body}>
           <Routes>
             <Route path="/store" element={<Store />} />
@@ -28,6 +29,7 @@ const Router = () => {
           </Routes>
        </div>
       <Footer />
+      </CartProvider>
     </div>
   );
 };

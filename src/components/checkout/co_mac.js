@@ -8,10 +8,15 @@ import Macbook from "../../assets/mac/asset-15.jpg";
 import Kabel from "../../assets/mac/asset-16.jpg";
 import Cas from "../../assets/mac/asset-17.jpg";
 import Appletv from "../../assets/mac/apple-tv.jpg";
+// import  {useCart}  from 'react-use-cart';
+// import data from "../data";
 
-class Comac extends Component {
-    render () {
-        return (
+
+const Comac = (props) => {
+
+  
+
+return (
             <div >   
                 <Nav className="d-flex align-items-center overflow-hidden">
                         <Navtext className="fs-5 fw-bold me-auto">
@@ -175,9 +180,9 @@ class Comac extends Component {
                             </div>
                             <div className='col-md-4 col-lg-3'>
                                 <div>
-                                        <button className='btn btn-primary'>Add to Cart
-                                         <FaShoppingBag className='ms-2'/>
-                                        </button>
+                                    <button className='btn btn-primary'>Add to Cart
+                                        <FaShoppingBag className='ms-2'/>
+                                    </button>
                                 </div>
                             </div>
                     </div>
@@ -185,7 +190,6 @@ class Comac extends Component {
 
             </div>
         )
-    }
 }
 
 export default Comac;

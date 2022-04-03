@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from "styled-components";
 import Shopmac from "../components/shop/mac";
+
 class Mac extends Component {
   render() {
     return (
       <div>
-          <Shopmac />
+           <Shopmac />
       </div>
     );
   }

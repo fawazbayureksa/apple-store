@@ -1,60 +1,97 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {FaApple , FaSistrix , FaShoppingBag} from "react-icons/fa";
-class Navbar extends Component {
-    render(){
+import { useCart } from "react-use-cart";
+import Cart from "./Cart";  
+const Navbar = () => {
+
+    const {
+        isEmpty,
+        totalUniqueItems,
+        items,
+        totalItems,
+        cartTotal,
+        updateItemQuantity,
+        removeItem,
+        emptyCart
+      } = useCart();
+      
+      console.log(items)
+
         return (
             <div className="navi">
-                <ul class="nav justify-content-center bg-dark nav-pills flex-column flex-sm-row">
+                <ul className="nav justify-content-center bg-dark nav-pills flex-column flex-sm-row">
                     <FaApple className="mob"/>
-                    <li class="nav-item">
-                        <Link to="/" class="nav-link text-white ">
+                    <li className="nav-item">
+                        <Link to="/" className="nav-link text-white ">
                             <FaApple className="fs-5" />
                         </Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/store" class="flex-sm-fill text-sm-center nav-link text-white">Store</Link>
+                    <li className="nav-item">
+                        <Link to="/store" className="flex-sm-fill text-sm-center nav-link text-white">Store</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-mac" class="text-sm-center nav-link text-white">Mac</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-mac" className="text-sm-center nav-link text-white">Mac</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-ipad" class="nav-link text-white">iPad</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-ipad" className="nav-link text-white">iPad</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-mac" class="nav-link text-white">iPhone</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-mac" className="nav-link text-white">iPhone</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-mac" class="nav-link text-white">Watch</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-mac" className="nav-link text-white">Watch</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-mac" class="nav-link text-white">AirPods</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-mac" className="nav-link text-white">AirPods</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-mac" class="nav-link text-white">TV Home</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-mac" className="nav-link text-white">TV Home</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-mac" class="nav-link text-white">Only on Apple</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-mac" className="nav-link text-white">Only on Apple</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/shop-mac" class="nav-link text-white">Accesories</Link>
+                    <li className="nav-item">
+                        <Link to="/shop-mac" className="nav-link text-white">Accesories</Link>
                     </li>
                
-                    <li class="nav-item">
-                        <Link to="/" class="nav-link text-white">
+                    <li className="nav-item">
+                        <Link to="/" className="nav-link text-white">
                             <FaSistrix className="fs-6" />
                         </Link>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/" class="nav-link text-white">
+                    <li className="nav-item">
+                        <button className="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <FaShoppingBag className="fs-6" />
-                        </Link>
+                        </button>
                     </li>
                 </ul>
+                
+                <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-lg">
+                        <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                    
+                    
+                            <Cart />
+                       
+                   
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
             
         )
-    }
 }
 
 export default Navbar;
