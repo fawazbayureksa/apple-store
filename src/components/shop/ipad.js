@@ -3,11 +3,9 @@ import Styles from "../style/mac.module.css";
 import Carousel from 'react-elastic-carousel';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-import Asset1 from "../../assets/ipad/asset-1.jpeg";
-import Asset2 from "../../assets/ipad/asset-4.jpeg";
-import Asset3 from "../../assets/ipad/asset-10.jpeg";
-import Asset4 from "../../assets/ipad/asset-13.jpeg";
+import Card from '../card/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import data from "../data";
 
 const breakPoints = [
     {width:1,itemsToShow:1},
@@ -67,67 +65,17 @@ class Shopipad extends Component {
 
                 <div className='row'>
                     <Carousel breakPoints={breakPoints}>
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                    
-                                   <h1 className="fs-4 fw-bolder overflow-hidden">
-                                        iPad Pro
-                                    </h1>
-                                </Topcard>
-                              
-                                    <img src={Asset1} className="card-img-bottom p-5"  />
-                               
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $999 or $41.62/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-ipad">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='card rounded shadow-xl me-3 p-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                <small className='text-danger'>New</small>
-                                   <h1 className="fs-4 fw-bolder overflow-hidden">
-                                        iPad Air
-                                    </h1>
-                                </Topcard>
-                                <img src={Asset2} className="card-img-bottom p-4" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $699 or $29.12/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-ipad">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>                   
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                               
-                                   <h1 className="fs-4 fw-bolder mt-3 overflow-hidden">
-                                        iPad
-                                </h1>
-                                </Topcard>
-                                <img src={Asset3} className="card-img-bottom p-4" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $429 or $17.87/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-ipad">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                <h1 className="fs-4 fw-bolder overflow-hidden">
-                                        iPad Mini
-                                    </h1>
-                                </Topcard>
-                                <img src={Asset4} className="card-img-bottom p-5" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $429 or $17.87/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-ipad">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
+                    {data.productIpad.map((item,index) => {
+                            return( 
+                                <Card 
+                                item={item} 
+                                title={item.title} 
+                                image={item.image} 
+                                price={item.price}    
+                                key={index}    
+                                />
+                             )
+                        })}
                      </Carousel> 
                 </div>
             </div>

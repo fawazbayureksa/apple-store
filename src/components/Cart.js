@@ -47,7 +47,7 @@ const Cart = () => {
               })}
               </tbody>
             </table>
-            <div className='col-auto ms-auto'>
+            <div className='col-auto ms-auto overflow-hidden'>
                   <button className='btn btn-danger btn-md' onClick={() => emptyCart()}>Clear Cart</button>
                   <h4 className='text-end'>Total Price: $ {cartTotal}</h4>
             </div>

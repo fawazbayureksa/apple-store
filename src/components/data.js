@@ -8,6 +8,17 @@ import ip2 from "../assets/iphone/asset-7.jpeg";
 import ip3 from "../assets/iphone/asset-14.jpeg";
 import ip4 from "../assets/iphone/asset-5.jpeg";
 
+import ipad1 from "../assets/ipad/asset-1.jpeg";
+import ipad2 from "../assets/ipad/asset-4.jpeg";
+import ipad3 from "../assets/ipad/asset-10.jpeg";
+import ipad4 from "../assets/ipad/asset-13.jpeg";
+
+
+import watch1 from "../assets/watch/asset-1.jpeg";
+import watch2 from "../assets/watch/asset-8.jpeg";
+import watch3 from "../assets/watch/asset-12.jpeg";
+import watch4 from "../assets/watch/asset-13.jpeg";
+
 const data = {
     productMac:
     [
@@ -62,6 +73,61 @@ const data = {
             price:599,
             image:ip4
         }
+    ],
+    productIpad:
+    [
+        {
+            id:1,
+            title:"iPad Pro",
+            price:799,
+            image:ipad1
+        },
+        {
+            id:2,
+            title:"iPad Air",
+            price:599,
+            image:ipad2
+        },
+        {
+            id:3,
+            title:"iPad",
+            price:599,
+            image:ipad3
+        },
+        {
+            id:4,
+            title:"iPad mini",
+            price:499,
+            image:ipad4
+        }
+    ],
+
+    productWatch:
+    [
+        {
+            id:1,
+            title:"Apple Watch Series 7",
+            price:399,
+            image:watch1
+        },
+        {
+            id:2,
+            title:"Apple Watch SE",
+            price:279,
+            image:watch2
+        },
+        {
+            id:3,
+            title:"Apple Watch Series 3",
+            price:199,
+            image:watch3
+        },
+        {
+            id:4,
+            title:"Apple Watch Nike",
+            price:399,
+            image:watch4
+        },
     ]
 }
  

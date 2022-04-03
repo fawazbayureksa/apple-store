@@ -14,10 +14,10 @@ const Card = (props) => {
                         {props.title}
                     </Topcard>
                 <Link to="/buy-mac">
-                    <img src={props.image} className="card-img-bottom" />
+                    <img src={props.image} className="card-img-bottom p-4" />
                 </Link>
                     <div className='d-flex'>
-                        <span className={Styles.textcard}>From $ {props.price} or {props.price/12} for 12 mo.*</span>
+                        <span className={Styles.textcard}>From $ {props.price} or {Math.round(props.price/12)} for 12 mo.*</span>
                         <button className="btn btn-primary btn-md ms-3"  onClick={() => addItem(props.item)} >Buy</button>
                     </div>
                 </div>

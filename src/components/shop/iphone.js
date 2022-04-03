@@ -4,7 +4,7 @@ import Carousel from 'react-elastic-carousel';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from '../card/Cardiphone';
+import Card from '../card/Card';
 import data from "../data";
 
 

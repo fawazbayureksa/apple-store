@@ -3,7 +3,7 @@ import Carousel from 'react-elastic-carousel';
 import Styles from "../style/mac.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from "../data";
-import Card from '../card/Cardmac';
+import Card from '../card/Card';
 
 
 const breakPoints = [
