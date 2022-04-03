@@ -1,22 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {FaApple , FaSistrix , FaShoppingBag} from "react-icons/fa";
-import { useCart } from "react-use-cart";
 import Cart from "./Cart";  
 const Navbar = () => {
 
-    const {
-        isEmpty,
-        totalUniqueItems,
-        items,
-        totalItems,
-        cartTotal,
-        updateItemQuantity,
-        removeItem,
-        emptyCart
-      } = useCart();
-      
-      console.log(items)
+
 
         return (
             <div className="navi">

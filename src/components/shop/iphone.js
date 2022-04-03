@@ -3,12 +3,9 @@ import Styles from "../style/mac.module.css";
 import Carousel from 'react-elastic-carousel';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-import Asset1 from "../../assets/iphone/asset-1.jpeg";
-import Asset2 from "../../assets/iphone/asset-7.jpeg";
-import Asset3 from "../../assets/iphone/asset-14.jpeg";
-import Asset4 from "../../assets/iphone/asset-5.jpeg";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Card from '../card/Cardiphone';
+import data from "../data";
 
 
 const breakPoints = [
@@ -30,8 +27,7 @@ const breakPoints2 = [
 
 
 
-class Shopiphone extends Component {
-    render (){
+const Shopiphone = () => {
         return (
             <div>
                 <div className='container'>
@@ -71,70 +67,21 @@ class Shopiphone extends Component {
 
                 <div className='row'>
                     <Carousel breakPoints={breakPoints}>
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                    <small className='text-danger'>New</small>
-                                   <h1 className="fs-4 fw-bolder overflow-hidden">
-                                        iPhone 13 Pro
-                                    </h1>
-                                </Topcard>
-                                <img src={Asset1} className="card-img-bottom mb-3 mt-3" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $999 or $41.62/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-iphone">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='card rounded shadow-xl me-3 p-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                <small className='text-danger'>New</small>
-                                   <h1 className="fs-4 fw-bolder overflow-hidden">
-                                        iPhone 13 
-                                    </h1>
-                                </Topcard>
-                                <img src={Asset2} className="card-img-bottom mb-3 mt-3" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $699 or $29.12/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-iphone">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>                   
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                <small className='text-danger'>New</small>
-                                   <h1 className="fs-4 fw-bolder overflow-hidden">
-                                        iPhone SE
-                                    </h1>
-                                </Topcard>
-                                <img src={Asset3} className="card-img-bottom mb-3 mt-3" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $429 or $17.87/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-iphone">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='card rounded shadow-xl me-3'>
-                            <div className='card-body'>
-                                <Topcard> 
-                                <h1 className="fs-4 fw-bolder overflow-hidden">
-                                        iPhone SE
-                                    </h1>
-                                </Topcard>
-                                <img src={Asset4} className="card-img-bottom mb-3 mt-3" />
-                                <div className='d-flex'>
-                                    <span className={Styles.textcard}>From $429 or $17.87/mo. for 12 mo.*</span>
-                                    <div className={Styles.buttoncard}><Link to="/buy-iphone">Buy</Link></div>
-                                </div>
-                            </div>
-                        </div>
+                    {data.productIphone.map((item,index) => {
+                            return( 
+                                <Card 
+                                item={item} 
+                                title={item.title} 
+                                image={item.image} 
+                                price={item.price}    
+                                key={index}    
+                                />
+                             )
+                        })}
                      </Carousel> 
                 </div>
             </div>
         )
-    }
 }
 export default Shopiphone;
 

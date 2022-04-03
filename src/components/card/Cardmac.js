@@ -1,14 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
 import  {useCart}  from 'react-use-cart';
-import Styles from "./style/mac.module.css";
+import Styles from "../style/mac.module.css";
 import { Link } from "react-router-dom";
 
-
 const Card = (props) => {
-    
     const {addItem} = useCart();    
-
     return ( 
         <>
             <div className='card rounded shadow-xl me-3'>

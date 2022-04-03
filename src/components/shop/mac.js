@@ -3,7 +3,7 @@ import Carousel from 'react-elastic-carousel';
 import Styles from "../style/mac.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from "../data";
-import Card from '../Card';
+import Card from '../card/Cardmac';
 
 
 const breakPoints = [
@@ -69,7 +69,7 @@ const Shopmac = () => {
 
                 <div className='row'>
                     <Carousel breakPoints={breakPoints}>
-                        {data.product.map((item,index) => {
+                        {data.productMac.map((item,index) => {
                             return( 
                                 <Card 
                                 item={item} 
