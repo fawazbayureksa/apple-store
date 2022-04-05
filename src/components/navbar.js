@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {FaApple , FaSistrix , FaShoppingBag} from "react-icons/fa";
 import Cart from "./Cart";  
+import { useCart } from "react-use-cart";
 const Navbar = () => {
 
-
+    const {totalUniqueItems,totalItems} = useCart();
 
         return (
             <div className="navi">
@@ -50,7 +51,8 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                         <button className="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <FaShoppingBag className="fs-6" />
+                            <FaShoppingBag className="badge-notif fs-6" data-badge="1" />
+                            <span class="badge bg-danger">{totalItems}</span>
                         </button>
                     </li>
                 </ul>
